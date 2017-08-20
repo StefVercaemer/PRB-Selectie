@@ -1,0 +1,15 @@
+﻿<Window x:Class="WpfLussen.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfLussen"
+        mc:Ignorable="d"
+        Title="Lussen" Height="350" Width="525" Loaded="Window_Loaded">
+    <Grid>
+        <ListBox x:Name="lstSpelers" HorizontalAlignment="Left" Height="271" Margin="10,38,0,0" VerticalAlignment="Top" Width="100" SelectionChanged="lstSpelers_SelectionChanged"/>
+        <Label Content="Spelers" HorizontalAlignment="Left" Margin="11,10,0,0" VerticalAlignment="Top" Width="99"/>
+        <Label x:Name="lblHighScore" Content="Geen speler geselecteerd" HorizontalAlignment="Left" Margin="123,37,0,0" VerticalAlignment="Top" Width="270" Height="58"/>
+
+    </Grid>
+</Window>
