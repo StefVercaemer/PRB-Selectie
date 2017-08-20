@@ -84,34 +84,34 @@ namespace WpfSelectie
 
         private void weekdag()
         {
-string dagNaam;
-DateTime momenteel = DateTime.Now;
-DayOfWeek dag = momenteel.DayOfWeek;
-switch(dag)
-{
-    case DayOfWeek.Sunday:
-        dagNaam = "zondag";
-
-    case DayOfWeek.Monday:
-        dagNaam = "maandag";
-        break;
-    case DayOfWeek.Tuesday:
-        dagNaam = "dinsdag";
-        break;
-    case DayOfWeek.Wednesday:
-        dagNaam = "woensdag";
-        break;
-    case DayOfWeek.Thursday:
-        dagNaam = "donderdag";
-        break;
-    case DayOfWeek.Friday:
-        dagNaam = "vrijdag";
-        break;
-    default:
-        dagNaam = "zaterdag";
-        break;
-}
-MessageBox.Show("Vandaag is het " + dagNaam, "Dag van de week");
+            string dagNaam;
+            DateTime momenteel = DateTime.Now;
+            DayOfWeek dag = momenteel.DayOfWeek;
+            switch(dag)
+            {
+                case DayOfWeek.Sunday:
+                    dagNaam = "zondag";
+                    break;
+                case DayOfWeek.Monday:
+                    dagNaam = "maandag";
+                    break;
+                case DayOfWeek.Tuesday:
+                    dagNaam = "dinsdag";
+                    break;
+                case DayOfWeek.Wednesday:
+                    dagNaam = "woensdag";
+                    break;
+                case DayOfWeek.Thursday:
+                    dagNaam = "donderdag";
+                    break;
+                case DayOfWeek.Friday:
+                    dagNaam = "vrijdag";
+                    break;
+                default:
+                    dagNaam = "zaterdag";
+                    break;
+            }
+            MessageBox.Show("Vandaag is het " + dagNaam, "Dag van de week");
         }
     }
 }
